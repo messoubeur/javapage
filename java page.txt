@@ -1,0 +1,66 @@
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+  
+    </LinearLayout>
+<ScrollView     </ScrollView>
+       android:layout_height="match_parent"
+    android:layout_width="match_parent"
+       android:fillViewport="true">
+
+       android:orientation="horizontal"
+   android:gravity="center">
+
+
+
+
+Button btn (Button)findViewById(R.id.);
+btn.setOnClickListener(new OnClickListener() {
+
+ @Override
+            public void onClick(View v) {
+
+
+countryboy
+
+
+
+        btn().setOnClickListener {
+
+
+ btn = (Button)findViewById(R.id.btn);
+
+         public void go (View v){
+
+        Intent btn = new Intent(this,page.class);
+        startActivity(btn);
+        }
+
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/textalria"
+            android:textSize="30sp" />
+
+    </ScrollView>
+
+
+
+
+
+
+ 
+
+
+
+
+
+

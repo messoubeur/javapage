@@ -1,0 +1,45 @@
+Android working with AdMob Banner Ad  arabyprof
+
+permission :
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+build.gradle :
+compile 'com.google.android.gms:play-services-ads:8.4.0'
+implementation 'com.google.android.gms:play-services-ads:15.0.1'
+
+
+string :
+<string name="banner">ca-app-pub-3940256099942544/6300978111</string>
+
+adView :
+<com.google.android.gms.ads.AdView
+            android:id="@+id/BANNERand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/messoubeurbn">
+        </com.google.android.gms.ads.AdView>
+
+xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+
+
+code java onCreate :
+///// admob banner start by:arabyprof/////////////////////////////////
+
+        AdView adView = (AdView) findViewById(R.id.BANNERand);
+        AdRequest adRequest = new AdRequest.Builder()
+                .setRequestAgent("android_studio:ad_template").build();
+        adView.loadAd(adRequest);
+
+///// banner end  by:arabyprof /////////////////////////////////
+
+-----------------------
+kantmana likom tawfik ow inchaalah had dawra radi istafad manha ljami3

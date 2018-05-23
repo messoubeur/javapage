@@ -1,0 +1,61 @@
+Android working with AdMob Interstitial Ad  arabyprof
+----------------------
+permission :
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+---------------------
+build.gradle :
+compile 'com.google.android.gms:play-services-ads:8.4.0'
+
+------------------
+string :
+<string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+
+-----------------
+code java 
+public class MainActivity :
+// public class MainActivity extends AppCompatActivity {
+
+InterstitialAd mInterstitialAd;
+private InterstitialAd interstitial;
+ 
+// }
+
+----------------
+
+onCreate :
+///// admob Interstitial start by:arabyprof/////////////////////////////////
+
+        adRequest = new AdRequest.Builder().build();
+
+        // Prepare the Interstitial Ad
+        interstitial = new InterstitialAd(page1.this);
+// Insert the Ad Unit ID
+        interstitial.setAdUnitId(getString(R.string.interstitial));
+
+        interstitial.loadAd(adRequest);
+// Prepare an Interstitial Ad Listener
+        interstitial.setAdListener(new AdListener() {
+            public void onAdLoaded() {
+// Call displayInterstitial() function
+                displayInterstitial();
+            }
+        });
+
+///// Interstitial end  by:arabyprof /////////////////////////////////
+
+
+////////
+public void displayInterstitial() {
+// If Ads are loaded, show Interstitial else show nothing.
+if (interstitial.isLoaded()) {
+interstitial.show();
+}
+}
+//////////
+
+
+-----------------------
+kantmana likom tawfik ow inchaalah had dawra radi istafad manha ljami3
